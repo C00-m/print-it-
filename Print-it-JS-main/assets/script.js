@@ -42,24 +42,24 @@ function showImage(index) {
 
 	dots[currentIndex].classList.add('dot_selected'); // Ajoute les bullet points sur la partie basse du slider
 
-	tagline.innerHTML = slides[currentIndex].tagLine; // Insère la tagline correspondante à chaques images
+	tagline.innerHTML = slides[currentIndex].tagLine;
 
 }
 
 
 // Écouteur d'événement pour le clic de la souris sur la flèche droite
 arrowRight.addEventListener('click', function () {
-	console.log("Clic sur la flèche droite"); // teste le fonctionnement des event listeners
+	console.log("Clic sur la flèche droite");
 	showNextImage();
 });
 
 // Écouteur d'événement pour le clic de la souris sur la flèche gauche
 arrowLeft.addEventListener('click', function () {
-	console.log("Clic sur la flèche gauche"); // teste le fonctionnement des event listeners
+	console.log("Clic sur la flèche gauche");
 	showPreviousImage();
 });
 
-// Affiche l'image d'index 0 - Première image du slider
+// Affiche Première image du slider
 
 showImage(0);
 
